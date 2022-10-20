@@ -1,14 +1,17 @@
-mod basic;
-mod ownership;
-mod structs;
+mod r01basic;
+mod r02ownership;
+mod r03structs;
 
 fn main() {
-    basic::immutability::immutable();
-    basic::immutability::shadowing();
-    basic::data_types::data_types();
-    basic::functions::add(3, 3);
-    basic::functions::substract(3, 3);
-    basic::control_flow::flow();
-    ownership::ownership::ownership();
-    structs::structs::structs();
+    println!("\n##########BASICS##########");
+    r01basic::immutability::immutable();
+    r01basic::immutability::shadowing();
+    r01basic::data_types::data_types();
+    r01basic::functions::add(3, 3);
+    r01basic::functions::substract(3, 3);
+    r01basic::control_flow::flow();
+    println!("\n##########OWNERSHIP##########");
+    r02ownership::ownership::ownership();
+    println!("\n##########STRUCTS##########");
+    r03structs::structs::structs();
 }
