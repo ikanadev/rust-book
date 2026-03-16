@@ -12,6 +12,7 @@ fn main() {
     r01basic::control_flow::flow();
     println!("\n##########OWNERSHIP##########");
     r02ownership::ownership::ownership();
+    r02ownership::references::references();
     println!("\n##########STRUCTS##########");
     r03structs::structs::structs();
 }
